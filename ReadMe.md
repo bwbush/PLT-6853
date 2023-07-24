@@ -2,7 +2,7 @@
 
 The behavior of the nix flake for `marlowe-cardano` has recently changed.
 
-Formerly, a flake like [failure/flake.nix](failure/flake.nix) would successfully evaluate. Now it results following error:
+Formerly, a flake like [failure/flake.nix](failure/flake.nix) would successfully evaluate. Now it results in the following error:
 
 ```console
 error: attempt to call something which is not a function but a set

@@ -26,8 +26,8 @@
       type = "github";
       owner = "input-output-hk";
       repo = "marlowe-cardano";
-    # ref = "121201ec9563a23b2b8a90c3544ebf15fe81c82f";  # OLD COMMIT
-      ref = "bf4b8c31a9c696b0e29e9b269b3f2fc176537089";  # NEWER COMMIT
+    # ref = "121201ec9563a23b2b8a90c3544ebf15fe81c82f";  # OLDER COMMIT (succeeds)
+      ref = "bf4b8c31a9c696b0e29e9b269b3f2fc176537089";  # NEWER COMMIT (fails)
     };
   };
 
@@ -39,8 +39,8 @@
       in rec {
         devShell = pkgs.mkShell {
           buildInputs = [
-          # mp.ghc8107.marlowe-cli-exe-marlowe-cli  # OLDER DERIVATION
-            mp.marlowe-cli-exe-marlowe-cli-ghc8107  # NEWER DERIVATION
+          # mp.ghc8107.marlowe-cli-exe-marlowe-cli  # OLDER DERIVATION (succeeds)
+            mp.marlowe-cli-exe-marlowe-cli-ghc8107  # NEWER DERIVATION (fails)
           ];
         };
       }
